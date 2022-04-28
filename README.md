@@ -1,6 +1,6 @@
-# Peon Recipe - Counterstrike Source : Global Offensive
+# Peon War Plan - Counterstrike Source : Global Offensive
 
-The battle plan that your Peon uses to deploy your game server.
+The PEON war plan that Peon uses to deploy your game server.
 
 ## Source
 
