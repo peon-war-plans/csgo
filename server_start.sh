@@ -11,7 +11,6 @@ exec 1>>$logfile 2>&1
 echo "##################### STARTING SERVER ######################"
 # Create a server.config file which contains relevant connection info for gamers (in the config directory)
 conf_file="/home/steam/config/server.config"
-public_ip=$(/usr/bin/dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | tr -d '"')
-printf "IP [$public_ip]" > $conf_file
+printf "IP [$PUBLIC_IP]" > $conf_file
 # CUSTOM GAME SERVER COMMAND
 ./data/srcds_run -game csgo -console -usercon +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2 +sv_setsteamaccount $STEAM_APP_ID
